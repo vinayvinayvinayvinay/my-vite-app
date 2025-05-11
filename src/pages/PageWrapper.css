@@ -1,0 +1,24 @@
+/* PageWrapper.css */
+.page-wrapper {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background-color: rgba(17, 15, 1, 0.67);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+.page-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.85); /* Light overlay */
+  z-index: 0;
+}
+
+.page-content {
+  position: relative;
+  z-index: 1;
+}

@@ -1,0 +1,60 @@
+.book-card {
+    background: #ffffff;
+    border: 2px solid #333; /* Dark border */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 220px;
+    height: 400px; /* Slightly smaller */
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .book-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .book-card h2 {
+    font-size: 18px;
+    margin: 10px 0 5px 0;
+  }
+  
+  .book-card p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .book-card .description {
+    flex-grow: 1;
+    margin-bottom: 10px;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .buttons button {
+    flex: 1 1 45%;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.3s;
+  }
+  
+  .buttons button:hover {
+    background-color: #2e7d32;
+  }
+  

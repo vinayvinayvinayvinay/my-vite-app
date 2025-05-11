@@ -1,0 +1,117 @@
+/* Home page styling */
+.home {
+  padding: 40px;
+  background: linear-gradient(to right, #f0f4f8, #e8f5e9);
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+
+.home h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px;
+  color: #333;
+}
+
+/* Book cards layout */
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+/* Individual book card */
+.book-card {
+  background-color: white;
+  border: 2px solid #333;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 260px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Book cover image */
+.book-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Book title & author */
+.book-card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+  text-align: center;
+}
+
+.book-card p {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  margin: 5px 0;
+}
+
+/* Button section */
+.price-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Buy and Rent buttons */
+.rent, .buy {
+  flex: 1;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.rent {
+  background-color: #03a9f4;
+}
+
+.rent:hover {
+  background-color: #0288d1;
+}
+
+.buy {
+  background-color: #4caf50;
+}
+
+.buy:hover {
+  background-color: #388e3c;
+}
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .book-list {
+    grid-template-columns: repeat(4, 1fr); /* Lock 4 cards per row on desktop */
+  }
+}

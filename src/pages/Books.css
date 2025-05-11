@@ -1,0 +1,104 @@
+.books-page h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.books-page {
+  background-color: transparent;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.book-form,
+.action-select {
+  background: rgba(209, 198, 198, 0.9); /* Light semi-transparent */
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  color: #333;
+}
+
+.action-select {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* ✅ Scoped only to the Book form to avoid affecting Login page */
+.book-form input,
+.book-form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+label {
+  margin-top: 15px;
+  display: block;
+  font-weight: bold;
+}
+
+.sell-btn,
+.lend-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.sell-btn {
+  background-color: #ff5722;
+  color: white;
+}
+
+.lend-btn {
+  background-color: #2196f3;
+  color: white;
+}
+
+button[type="submit"] {
+  margin-top: 15px;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  margin-top: 15px;
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.book-list {
+  margin-top: 30px;
+}
+
+.book-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+}
+
+.price-tag {
+  font-weight: bold;
+  margin-top: 10px;
+}
